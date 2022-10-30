@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@100;200;300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B5B4F5;
+}
+
+/* Main */
+main.container{
+  display: flex;
+  width: 80%;
+  height: 70vh;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+}
+/* Área img */
+section.area-imagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  background-color: #F2DBB8;
+} section.area-imagem img{
+  width: 36rem;
+}
+/* Área de cadastro */
+section.area-cadastro{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+/* Header da área de cadastro */
+section.area-cadastro .cadastro-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+} .cadastro-header .titulo h1{
+  font-size: 2.2rem;
+} .cadastro-header .titulo h1::after{
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 0.4rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+.cadastro-header button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c63ff;
+  transition: background-color 0.5s;
+} .cadastro-header button a{
+  color: white;
+  font-weight: 500;
+} .cadastro-header button:hover{
+  background-color: #5b55d5;
+  transition: background-color 0.5s;
+}
+
+/* Conteúdo principal da área de cadastro */
+section.area-cadastro .cadastro-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+} .cadastro-main .input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+} .cadastro-main .input input{
+  margin: 0.6rem 0;
+  padding: 0.9rem 1.2rem;
+  width: 17rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #0000001c;
+  transition: background-color 0.5s;
+} .cadastro-main .input input:hover{
+  background-color: rgb(240, 240, 240);
+  transition: background-color 0.5s;
+} .cadastro-main .input input:focus-visible{
+  outline: 2px solid #6c63ff;
+} .cadastro-main .input input::placeholder{
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Inputs gêneros */
+.cadastro-generos {
+  padding: 1rem;
+}
+/* Textos de cima dos inputs */
+.cadastro-main .input label,
+.cadastro-generos .titulo h4{
+  font-size: 0.75rem;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.75);
+} 
+.cadastro-generos .generos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.8rem;
+} .cadastro-generos .generos .genero{
+  display: flex;
+  align-items: center;
+} .cadastro-generos .generos .genero input{
+  margin-right: 0.35rem;
+} .cadastro-generos .generos .genero label{
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Botão de cadastro */
+.btn-cadastrar button{
+  width: 100%;
+  padding: 0.62rem;
+  margin-top: 1.2rem;
+  border: none;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #0000001c;
+  transition: background-color 0.5s;
+} .btn-cadastrar button:hover{
+  background-color: #5b55d5;
+  transition: background-color 0.5s;
+}
