@@ -18,7 +18,7 @@ body{
 main.container{
   display: flex;
   width: 80%;
-  height: 70vh;
+  min-height: 70vh;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 }
 /* Área img */
@@ -144,4 +144,73 @@ section.area-cadastro .cadastro-main {
 } .btn-cadastrar button:hover{
   background-color: #5b55d5;
   transition: background-color 0.5s;
+}
+
+/* Responsividade */
+@media (max-width:1690px){ /* 1690 */
+  main.container{
+    width: 70%;
+  }
+  section.area-imagem{
+    display: none;
+  }
+}
+
+@media (max-width:1510px){ /* 1510 */
+  .cadastro-main .input input{
+    width: 15rem;
+  }
+}
+
+@media (max-width:1228px){ /* 1228 */
+  main.container{
+    width: 60%;
+    min-height: 90vh;
+  }
+
+}
+
+@media (max-width:1020px){ /* 1020 */
+  main.container{
+    width: 90%;
+    min-height: 90vh;
+  }
+
+}
+
+@media (max-width:680px){ /* 680 */
+  main.container{
+    width: 90%;
+  }
+  section.area-cadastro{
+    align-items: stretch;
+  }
+  .cadastro-header .titulo h1{
+    font-size: 1.5rem;
+  }
+  section.area-cadastro .cadastro-main{
+    flex-direction: column;
+    max-height: 15rem;
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+  section.area-cadastro .cadastro-main .input{
+    width: 100%;
+  }
+  section.area-cadastro .cadastro-main .input input{
+    width: 100%;
+  }
+  .cadastro-generos .generos{
+    flex-direction: column;
+  }
+  .cadastro-generos .generos .genero{
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width:550px){ /* 550 */
+  main.container{
+    width: 100%;
+    height: 100vh;
+  }
 }
